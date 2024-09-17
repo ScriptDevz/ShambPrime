@@ -1,5 +1,5 @@
 "use client";
 
 export default function Footer() {
-    return <div>Footer Section</div>;
+    return <div>© ScirptDevz - 2024</div>;
 }
