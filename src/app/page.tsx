@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
-import Carrousel from "@/components/Carroursel";
+import Carousel from "@/components/Carousel";
 import Rating from "@/components/Rating";
 import Save from "@/components/Save";
 import Watch from "@/components/Watch";
@@ -14,9 +14,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="landing-container">
       <Header />
-      <Carrousel />
+      <Carousel />
       <Rating />
       <Save />
       <Watch />

@@ -1,5 +1,5 @@
 "use client";
 
 export default function Carrousel() {
-    return <div>Carrousel Section</div>;
+    return <div>Carousel Section</div>;
 }
