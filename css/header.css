@@ -69,3 +69,57 @@ span {
 #cont-tab:hover {
     background-color: rgba(0,0,0, 0.7);
 }
+
+
+
+/* modal section */
+
+
+.modal-head {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;  
+    display: flex;
+    
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal button {
+    display: none;
+}
+
+.explore-sec {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    /* background-color: rgb(190, 190, 190); */
+}
+
+.categories {
+    display: flex;
+}
+
+.cat-left, .cat-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: .3rem;
+}
+
+
+.section-title {
+    color: #e4a00d
+}
+
+.section {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.acc {
+    color: black;
+}
