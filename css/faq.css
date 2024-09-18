@@ -30,20 +30,20 @@ section {
     width: 100%;
 }
 
-button {
+/* button {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .px-4 {
     margin-bottom: 20px;
     background-color: rgb(34, 34, 34);
-    padding: 15px 30px;
     border-radius: 10px;
 }
 
 .py-2 {
-    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 16px;
 }
