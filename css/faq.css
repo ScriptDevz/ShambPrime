@@ -1,0 +1,29 @@
+section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    padding: 0px 50px;
+    display: block;
+}
+
+.headline-faq {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.down-faq-list {
+    display: block;
+}
+
+.down-faq-list-inner {
+    display: block;
+    position: relative;
+    justify-content: center;
+    text-align: start;
+    padding: 15px 30px;
+    width: auto;
+    background-color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
