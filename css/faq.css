@@ -12,6 +12,11 @@ section {
     margin: 50px 0px;
 }
 
+.faq-list {
+    display: flex;
+    width: 100%;
+}
+
 .down-faq-list {
     display: block;
 }
@@ -22,8 +27,23 @@ section {
     justify-content: center;
     text-align: start;
     padding: 15px 30px;
-    width: auto;
-    background-color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.px-4 {
     margin-bottom: 20px;
+    background-color: rgb(34, 34, 34);
+    padding: 15px 30px;
     border-radius: 10px;
+}
+
+.py-2 {
+    margin-top: 10px;
 }
