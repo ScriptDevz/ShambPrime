@@ -1,7 +1,7 @@
 "use client";
 
 import "../css/faq.css"
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Accordion, AccordionItem} from "@nextui-org/accordion";
 
 export default function FAQ() {
     const firstFAQ = "Praesent auctor neque at imperdiet feugiat."
@@ -17,7 +17,10 @@ export default function FAQ() {
             <div className="headline-faq">
                 <h2>Question? ... Answer!</h2>
             </div>
-        <Accordion variant="splitted" selectionMode="multiple">
+        <Accordion 
+            variant="splitted" 
+            selectionMode="multiple"
+            >
             <AccordionItem key="1" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
                 {firstFAQ}
             </AccordionItem>
