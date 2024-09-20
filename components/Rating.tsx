@@ -59,14 +59,18 @@ export default function Rating() {
                         <p className="download-now">Download Now!</p>
                     </CardHeader>
                     <CardBody className="dl-btns">
-                        <Image 
+                        <a href="">
+                            <Image 
                             src={GooglePlayStore}
                             height={50}
-                            alt="Google Play Store"></Image>
-                        <Image 
+                            alt="Google Play Store" />
+                        </a>
+                        <a href="">
+                            <Image 
                             src={AppleAppStore}
                             height={50}
-                            alt="Apple App Store"></Image>
+                            alt="Apple App Store" />
+                        </a>
                     </CardBody>
                 </Card>
             </div>
