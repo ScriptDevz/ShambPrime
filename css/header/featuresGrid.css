@@ -1,0 +1,83 @@
+/* Featers Dropdown */
+
+/* card */
+.dd-card-container {
+    display: flex;
+}
+
+.dd-card-icon {}
+
+.dd-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.dd-card-text-title {
+    color: black;
+}
+
+.dd-card-text-body{
+    color: gray;
+    max-width: 15rem;
+
+}
+
+
+/* componenet */
+
+[aria-label="Features"] {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "all1 pro1"
+    "all2 pro2"
+    "all3 pro3"
+    "all4 pro4"
+    "all5 pro5"
+    "all6 .";
+}
+
+#all1, #pro1 {
+    color:#e4a00d;
+}
+
+
+#all1 {
+    grid-area: all1;
+}
+#all2 {
+    grid-area: all2;
+}
+#all3 {
+    grid-area: all3;
+}
+#all4 {
+    grid-area: all4;
+}
+#all5 {
+    grid-area: all5;
+}
+#all6 {
+    grid-area: all6;
+}
+
+#pro1 {
+    grid-area: pro1;
+}
+#pro2 {
+    grid-area: pro2;
+}
+#pro3 {
+    grid-area: pro3;
+}
+#pro4 {
+    grid-area: pro4;
+}
+#pro5 {
+    grid-area: pro5;
+}
+
+#all1:hover, #pro1:hover {
+    background: inherit !important;
+}

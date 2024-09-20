@@ -1,0 +1,83 @@
+
+[aria-label="Menu"] {
+    display: grid; 
+    grid-template-areas: 
+    "exp1 catLT1 ."
+    "exp2 catLT2 catRT1"
+    "exp3 catLT3 catRT2"
+    "exp4 catLT4 catRT3"
+    "exp5 catLT5 catRT4"
+    "exp6 catLT6 catRT5"
+    ".   catLT7 catRT6"
+    ".   catLT8 catRT7"; 
+
+}
+
+    #exp1 {
+        grid-area: exp1;
+        color:#e4a00d;
+    }
+    #exp2 {
+        grid-area: exp2;
+    }#exp3 {
+        grid-area: exp3;
+    }#exp4 {
+        grid-area: exp4;
+    }#exp5 {
+        grid-area: exp5;
+    }#exp6 {
+        grid-area: exp6;
+    }
+    #catLT1 {
+        grid-area: catLT1;
+        color:#e4a00d;
+    }
+    #catLT2 {
+        grid-area: catLT2;
+    }
+    #catLT3 {
+        grid-area: catLT3;
+    }
+    #catLT4 {
+        grid-area: catLT4;
+    }
+    #catLT5 {
+        grid-area: catLT5;
+    }
+    #catLT6 {
+        grid-area: catLT6;
+    }
+    #catLT7 {
+        grid-area: catLT7;
+    }
+    #catLT8 {
+        grid-area: catLT8;
+    }
+    
+    
+    #catRT1 {
+        grid-area: catRT1;
+    }
+    #catRT2 {
+        grid-area: catRT2;
+    }
+    #catRT3 {
+        grid-area: catRT3;
+    }
+    #catRT4 {
+        grid-area: catRT4;
+    }
+    #catRT5 {
+        grid-area: catRT5;
+    }
+    #catRT6 {
+        grid-area: catRT6;
+    }
+    #catRT7 {
+        grid-area: catRT7;
+    }
+
+
+#exp1:hover, #catLT1:hover {
+    background: inherit !important;
+}

@@ -1,0 +1,51 @@
+[aria-label="Downloads"] {
+    display: grid;
+    grid-template-areas: 
+        "DA1 DP1"
+        "DA2 DP2"
+        "DA3 DP3"
+        "DA4 DP4"
+        "DA5 DP5";
+}
+
+
+
+#downloadApp1 {
+    grid-area: DA1;
+}
+#downloadApp2 {
+    grid-area: DA2;
+}
+#downloadApp3 {
+    grid-area: DA3;
+}
+#downloadApp4 {
+    grid-area: DA4;
+}
+#downloadApp5 {
+    grid-area: DA5;
+}
+
+#downloadPro1 {
+    grid-area: DP1;
+}
+#downloadPro2 {
+    grid-area: DP2;
+}
+#downloadPro3 {
+    grid-area: DP3;
+}
+#downloadPro4 {
+    grid-area: DP4;
+}
+#downloadPro5 {
+    grid-area: DP5;
+}
+
+#downloadApp1, #downloadPro1 {
+    color: #e4a00d
+}
+
+#downloadApp1:hover, #downloadPro1:hover {
+    background: inherit !important;
+}

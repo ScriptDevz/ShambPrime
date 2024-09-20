@@ -1,0 +1,65 @@
+[aria-label="Tv"] {
+    display: grid;
+    grid-template-rows: repeat(13, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: 
+    "tvExp1 tvCatLT1 ."
+    "tvExp2 tvCatLT2 tvCatRT1"
+    "tvFeature1 tvCatLT3 tvCatRT2"
+    "tvFeature2 tvCatLT4 tvCatRT3"
+    "tvFeature3 tvCatLT5 tvCatRT4"
+    "tvFeature4 tvCatLT6 tvCatRT5"
+    ". tvCatLT7 tvCatRT6"
+    ". tvCatLT8 tvCatRT7"
+    ". tvCatLT9 tvCatRT8"
+    ". tvCatLT10 tvCatRT9"
+    ". tvCatLT11 tvCatRT10"
+    ". tvCatLT12 tvCatRT11"
+    ". tvCatLT13 .";
+}
+
+#tvCatLT1 { grid-area: tvCatLT1; }
+#tvCatLT2 { grid-area: tvCatLT2; }
+#tvCatLT3 { grid-area: tvCatLT3; }
+#tvCatLT4 { grid-area: tvCatLT4; }
+#tvCatLT5 { grid-area: tvCatLT5; }
+#tvCatLT6 { grid-area: tvCatLT6; }
+#tvCatLT7 { grid-area: tvCatLT7; }
+#tvCatLT8 { grid-area: tvCatLT8; }
+#tvCatLT9 { grid-area: tvCatLT9; }
+#tvCatLT10 { grid-area: tvCatLT10; }
+#tvCatLT11 { grid-area: tvCatLT11; }
+#tvCatLT12 { grid-area: tvCatLT12; }
+#tvCatLT13 { grid-area: tvCatLT13; }
+
+
+
+#tvCatRT1 { grid-area: tvCatRT1; }
+#tvCatRT2 { grid-area: tvCatRT2; }
+#tvCatRT3 { grid-area: tvCatRT3; }
+#tvCatRT4 { grid-area: tvCatRT4; }
+#tvCatRT5 { grid-area: tvCatRT5; }
+#tvCatRT6 { grid-area: tvCatRT6; }
+#tvCatRT7 { grid-area: tvCatRT7; }
+#tvCatRT8 { grid-area: tvCatRT8; }
+#tvCatRT9 { grid-area: tvCatRT9; }
+#tvCatRT10 { grid-area: tvCatRT10; }
+#tvCatRT11 { grid-area: tvCatRT11; }
+#tvCatRT12 { grid-area: tvCatRT12; }
+
+#tvExp1 { grid-area: tvExp1; }
+#tvExp2 { grid-area: tvExp2; }
+
+#tvFeature1 { grid-area: tvFeature1; }
+#tvFeature2 { grid-area: tvFeature2; }
+#tvFeature3 { grid-area: tvFeature3; }
+#tvFeature4 { grid-area: tvFeature4; }
+
+
+#tvExp1, #tvFeature1, #tvCatLT1 {
+    color:#e4a00d;
+}
+
+#tvExp1:hover, #tvFeature1:hover, #tvCatLT1:hover {
+    background: inherit !important;
+}    

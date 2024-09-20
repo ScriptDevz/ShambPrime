@@ -1,0 +1,14 @@
+{
+    "moviesExplore": ["Explore","Featured", "Movies & TV Shows", "Live TV Channels", "Most Popular", "Leaving Soon"],
+    "moviesCategoriesLT":["Categories","Action", "Comedy", "Descriptive Audio", "Drama", "Horror", "Romance", "Thriller"],
+    "moviesCategoriesRT": ["Animation", "Crime", "Documentary", "En Español", "Music", "Sci-Fi", "Western"],
+    "tvExplore": ["Explore","Browse Channels"],
+    "tvFeatured": ["Featured Channles","ION", "BET xTyler Perry Comedy", "MythBusters"],
+    "tvCategoriesLT": ["Categories","Hit TV", "True Crime", "News", "Game Shows", "Comedy", "Movies", "Chills & Thrills", "Food & Home", "Kids & Family", "Music", "Anime & Gaming", "International"],
+    "tvCategoriesRT": ["Drama TV", "Reality", "Sports", "History & Science", "Daytime TV", "Sci-FI & Action", "Classic TV", "Black Entertainment", "Lifestyle", "Nature & Travel", "En Español"],
+    "featureAll": [["","600+ FreeliveTV Channles", "Tune in anytime, on any device."], ["", "Free Movies & Shows", "Stream 50,000+ titles on demand"],["","Ready, Set, Rent","Browse new releases and cult classics"],["","Experience Discover on Plex","Find a movie. Find a show. Find your friends."], ["","Stream on Almost Any Device","Download our free app to start"] ],
+    "featurePro": [["","Add Your Personal Media","Organize & stream your own collection."], ["","Upgrade to Plex Pass","Get the most from your personal media."], ["","Plexamp","Experience the app made for audiophiles."], ["","Ultimate DVR (Plex Pass Exclusive)","Watch & record broadcast TV."]],
+    "downloadApp": [["", "For TVs", "Roku, Fire TV, Samsung & more"], ["", "For Mobile", "iOS & Andriod"], ["", "For Consoles", "PlayStation & Xbox"], ["", "For Desktop", "Mac, Windows & Web"]],
+    "downloadPro": [["", "Shamb Prime Media Server", "Create, organize, and store your collections."], ["", "Shamb Prime Amp", "Experience the app made for audiophiles."], ["", "Shamb Prime Photos", "All your photo collections. One easy app."], ["", "Shamb Prime Dash(Shamb Prime Pass Exlusive)", "A custom app for remote server monitoring."]]
+
+}
