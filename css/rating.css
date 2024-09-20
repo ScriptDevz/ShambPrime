@@ -1,58 +1,51 @@
 .rating-sect {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    margin: auto;
+    padding: 80px 60px;
 }
 
 .outer-rating {
     display: flex;
-    gap: 50px;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .inner-rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 40px;
-}
-
-.title-rating {
-    display: block;
-    gap: 50px;
+    width: 33.3%;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
 }
 
 .headline-title {
     display: flex;
-    gap: 10px;
+    font-size: 1.1em;
     align-items: center;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-.ptf-title {
-    font-size: 1em;
-    color: rgb(128, 128, 128);
+    gap: 1em;
+    padding-bottom: 20px;
+    font-weight: bolder;
 }
 
 .icon-platform {
-    height: 40px;
-}
-
-.rating-icon {
-    height: 20px;
-    width: fit-content;
+    height: 1.8em;
 }
 
 .star-rating {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: fit-content;
+    padding: 10px 0px;
+}
+
+.rating-icon {
+    height: 1.5em;
 }
 
 .stat-rating {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .out-of-five-rating {
@@ -61,17 +54,18 @@
 }
 
 .rating-stats {
-    font-size: .8em;
+    font-size: .9em;
     color: rgb(69, 69, 69);
 }
 
 .download-now {
-    font-size: 1.3em;
+    margin: auto;
 }
 
 .dl-btns {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: .3605em;
 }
