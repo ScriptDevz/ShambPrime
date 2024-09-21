@@ -1,0 +1,71 @@
+.rating-sect {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 80px 60px;
+}
+
+.outer-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.inner-rating {
+    width: 33.3%;
+    max-width: 250px;
+    height: 200px;
+    padding: 20px;
+}
+
+.headline-title {
+    display: flex;
+    font-size: 1.1em;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+.icon-platform {
+    height: 1.8em;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: fit-content;
+    padding: 10px 0px;
+}
+
+.rating-icon {
+    height: 1.5em;
+}
+
+.stat-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.out-of-five-rating {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.rating-stats {
+    font-size: .9em;
+    color: rgb(69, 69, 69);
+}
+
+.download-now {
+    margin: auto;
+}
+
+.dl-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3605em;
+}

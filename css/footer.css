@@ -1,0 +1,40 @@
+footer {
+    padding: 50px 0px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    color: rgb(69, 69, 69);
+}
+
+.sub-footer {
+    display: flexbox;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.sub-half-footer {
+    display: flex;
+}
+
+.above-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-menu-sub {
+    display: flex;
+}
+
+.menu-list {
+    padding: 0px 5px;
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons {
+    height: 20px;
+}

@@ -1,0 +1,32 @@
+.info-sect {
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.info-list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.info-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    font-weight: 1000;
+    padding-top: 20px;
+}
+
+.menu-title {
+    font-size: 18px;
+}
+
+.info-sub-menu {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    padding-top: 1em;
+    gap: .5em;
+    color: rgb(69, 69, 69);
+}

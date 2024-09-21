@@ -1,0 +1,41 @@
+.blog-sect {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding: 50px 100px;
+}
+
+.blog-headline {
+    font-size: 2em;
+    padding-bottom: 70px;
+}
+
+.blog-post-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.each-blog-post {
+    width: 33.3%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.blogpost {
+    position: relative;
+}
+
+.text-over-img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    font-weight: bolder;
+    color: white;
+}
+
+.blog-img {
+    opacity: .25;
+}
