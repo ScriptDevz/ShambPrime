@@ -5,7 +5,7 @@ import test1 from "../src/app/Test1.png";
 import test2 from "../src/app/Test2-2.png";
 import test3 from "../src/app/Test3.png";
 import Image from "next/image"
-import { Card, CardHeader, CardBody, CardFooter, Grid } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
 export default function Blog() {
     return (
@@ -23,18 +23,18 @@ export default function Blog() {
                 </Card>
 
                 <Card isBlurred className="each-blog-post">
-                    <CardBody className="blogpost">
+                    <CardFooter className="blogpost">
                         <p className="text-over-img">The Corvette</p>
                         <Image className="blog-img" src={test2} alt="Federal Corvette Spaceship from Elite Dangerous" />
-                    </CardBody>
+                    </CardFooter>
 
                 </Card>
 
                 <Card isBlurred className="each-blog-post">
-                    <CardBody className="blogpost">
+                    <CardFooter className="blogpost">
                         <p className="text-over-img">The Python</p>
                         <Image className="blog-img" src={test3} alt="Python Spaceship from Elite Dangerous" />
-                    </CardBody>
+                    </CardFooter>
 
                 </Card>
             </div>
