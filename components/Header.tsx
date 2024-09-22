@@ -17,6 +17,7 @@ import tvList from "./headerData/tvList"
 import featuresList from "./headerData/featuresList";
 import downloadList from "./headerData/downloadList";
 
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react"
 import {Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, DropdownSection, Avatar} from "@nextui-org/react";
 
 export default function Header() {
@@ -27,24 +28,25 @@ export default function Header() {
     const [downloadIsShowing, downloadSetIsShowing] = useState(false)
 
 
-    return <header>
-                <div className="search-container">
-                   <Image 
-                    src={logo}
-                    width={50}
-                    height={10}
-                    alt="logo"
-                   />
+    return (
+        <Navbar id="navbar" position="static" maxWidth="full"> 
+                   
+                   <NavbarContent justify="start">
+                    <NavbarBrand>
+                    <p>Shamb Prime</p>
+                   </NavbarBrand>
+                    <NavbarItem >
                     <input
                         type="text"
                         placeholder="&#xf002;   Find Movies & TV"            
                     />
-                </div>
+                    </NavbarItem>
+                   </NavbarContent>
+                    
 
-                
-                <div className="tab-container">
-                    <div className="content-tabs">
-                     <Dropdown isOpen={movieIsShowing} 
+                    <NavbarContent justify="end">
+                    <NavbarItem>
+                    <Dropdown isOpen={movieIsShowing} showArrow={true} 
                      >                        
                         <DropdownTrigger>
                             <span
@@ -65,100 +67,112 @@ export default function Header() {
                                         movieList.map((item) => item)
                                     }
                         </DropdownMenu>
-                        </Dropdown>     
-                    <Dropdown isOpen={tvIsShowing} >
-                        <DropdownTrigger>
-                            <span
-                            onMouseEnter={() => tvSetIsShowing(true)}
-                            onMouseLeave={() => tvSetIsShowing(false)}
-                            >Live TV</span>
-                        </DropdownTrigger>
-                        <DropdownMenu
-                            className="list-container"
-                            onMouseEnter={() => tvSetIsShowing(true)}
-                            onMouseLeave={() => tvSetIsShowing(false)}
-                            aria-label="Tv"
+                        </Dropdown> 
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Dropdown isOpen={tvIsShowing} showArrow={true} >
+                            <DropdownTrigger>
+                                <span
+                                onMouseEnter={() => tvSetIsShowing(true)}
+                                onMouseLeave={() => tvSetIsShowing(false)}
+                                >Live TV</span>
+                            </DropdownTrigger>
+                            <DropdownMenu
+                                className="list-container"
+                                onMouseEnter={() => tvSetIsShowing(true)}
+                                onMouseLeave={() => tvSetIsShowing(false)}
+                                aria-label="Tv"
 
-                        >
-                            {
-                                tvList.map((item) => item)
-                            }
-                        </DropdownMenu>
-                    </Dropdown>
-
-                    <Dropdown isOpen={featureIsShowing} >
-                        <DropdownTrigger
+                            >
+                                {
+                                    tvList.map((item) => item)
+                                }
+                            </DropdownMenu>
+                        </Dropdown>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Dropdown isOpen={featureIsShowing} showArrow={true}>
+                            <DropdownTrigger
+                                onMouseEnter={() => featureSetIsShowing(true)}
+                                onMouseLeave={() => featureSetIsShowing(false)}
+                            >
+                                <span>Features</span>
+                            </DropdownTrigger>
+                            <DropdownMenu
+                            aria-label="Features"
                             onMouseEnter={() => featureSetIsShowing(true)}
                             onMouseLeave={() => featureSetIsShowing(false)}
-                        >
-                            <span>Features</span>
-                        </DropdownTrigger>
-                        <DropdownMenu
-                        aria-label="Features"
-                        onMouseEnter={() => featureSetIsShowing(true)}
-                        onMouseLeave={() => featureSetIsShowing(false)}
-                        className="list-container"
-                        >
-                            {
-                                featuresList.map((item) => item)
-                            }
-                        </DropdownMenu>
-                    </Dropdown>
-                    <Dropdown isOpen={downloadIsShowing} >
-                        <DropdownTrigger>
-                            <span
-                                onMouseEnter={() => downloadSetIsShowing(true)}
+                            className="list-container"
+                            >
+                                {
+                                    featuresList.map((item) => item)
+                                }
+                            </DropdownMenu>
+                        </Dropdown>   
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Dropdown isOpen={downloadIsShowing} showArrow={true}>
+                            <DropdownTrigger>
+                                <span
+                                    onMouseEnter={() => downloadSetIsShowing(true)}
+                                    onMouseLeave={() => downloadSetIsShowing(false)}
+                                >Download</span>
+                            </DropdownTrigger>
+                            <DropdownMenu
+                                aria-label="Downloads"
+                                onMouseEnter={()=> downloadSetIsShowing(true)}
                                 onMouseLeave={() => downloadSetIsShowing(false)}
-                            >Download</span>
-                        </DropdownTrigger>
-                        <DropdownMenu
-                            aria-label="Downloads"
-                            onMouseEnter={()=> downloadSetIsShowing(true)}
-                            onMouseLeave={() => downloadSetIsShowing(false)}
-                            className="list-container"
-                        >
-                            {
-                                downloadList.map((item) => item)
-                            }
-                        </DropdownMenu>
-                    </Dropdown>
-                    </div>
-                    <Divider orientation="vertical" />
-                    <div className="profile-container">
+                                className="list-container"
+                            >
+                                {
+                                    downloadList.map((item) => item)
+                                }
+                            </DropdownMenu>
+                        </Dropdown>
+                    </NavbarItem>
+                    
+                </NavbarContent>
+                <Divider orientation="vertical" id="nav-divider"/>
+
+
+                <NavbarContent justify="end" id="navbar-last">
+                <NavbarItem>
                         <Button id="open-btn">Open ShambPrime</Button>
+                    </NavbarItem>
+                    <NavbarItem>
                         <Dropdown>
-                        <DropdownTrigger>
-                            <Avatar size="sm" id="avatar">
-                            </Avatar>
-                        </DropdownTrigger>
-                        <DropdownMenu
-                            className="list-container"
+                            <DropdownTrigger>
+                                <Avatar size="sm" id="avatar">
+                                </Avatar>
+                            </DropdownTrigger>
+                            <DropdownMenu
+                                className="list-container"
 
-                        >
-                            <DropdownSection >
-                            <DropdownItem>
-                                Shamb
-                            </DropdownItem>
-                            <DropdownItem>
-                                Account Settings
-                            </DropdownItem>
-                            <DropdownItem>
-                                My Watchlist
-                            </DropdownItem>
-                            <DropdownItem>
-                                Support
-                            </DropdownItem>
-                            </DropdownSection>
-                            <DropdownSection >
-                            <DropdownItem>
-                                Sign Out
-                            </DropdownItem>
-                            </DropdownSection>
-                        </DropdownMenu>
-                    </Dropdown>
-                    </div>
-                </div>
-
-    </header>
+                            >
+                                <DropdownSection >
+                                <DropdownItem>
+                                    Shamb
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Account Settings
+                                </DropdownItem>
+                                <DropdownItem>
+                                    My Watchlist
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Support
+                                </DropdownItem>
+                                </DropdownSection>
+                                <DropdownSection >
+                                <DropdownItem>
+                                    Sign Out
+                                </DropdownItem>
+                                </DropdownSection>
+                            </DropdownMenu>
+                        </Dropdown>
+                    </NavbarItem>
+                </NavbarContent>
+        </Navbar>
+    )
 }
  
